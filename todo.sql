@@ -1,0 +1,9 @@
+CREATE DATABASE todo_app;
+
+USE todo_app;
+
+CREATE TABLE todos (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    completed TINYINT(1) NOT NULL DEFAULT 0
+);
